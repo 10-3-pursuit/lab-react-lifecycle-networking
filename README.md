@@ -46,7 +46,7 @@ You _should not_ change the overall component hierarchy in this application.
 
 The URL for the API you will be accessing is `https://resource-veterinarian-api-4guj.onrender.com`.
 
-There will be two endpoints you will need to hit.
+You will need to hit two endpoints:
 
 #### `/api/employees`
 

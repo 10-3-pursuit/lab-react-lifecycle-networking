@@ -86,7 +86,7 @@ Making a GET request to this path will return an array of pets. The response wil
 ];
 ```
 
-Each pet has an `employeeId` key which matches one employee's id. This represents which staff member is overseeing the pet.
+Each pet has an `employeeId` key which matches one employee's `id`. This represents which staff member is overseeing the pet.
 
 Alternaitively, you can specifically look for pets with an ID that matches an employee. For example, take a look at the following path and response.
 

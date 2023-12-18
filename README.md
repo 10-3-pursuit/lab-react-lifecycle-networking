@@ -29,7 +29,8 @@ In this lab, you will build a simple page that will show all of the employees at
 ## Instructions
 
 Making use of the existing code, add the following features to the React application. Details about the API you will be accessing are included below.
-Use the image above as a reference.
+
+_\*\*Use the image above as a reference._
 
 - [ ] Instead of showing a hardcoded staff member, dynamically build a list of staff members by accessing the external API.
   - [ ] If the staff member has a `prefix`, like `"Dr."`, include it at the beginning of the name. (E.g. "Dr. Leah Ayers")

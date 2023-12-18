@@ -48,6 +48,8 @@ The URL for the API you will be accessing is `https://resource-veterinarian-api-
 
 You will need to hit two endpoints:
 
+You can test each endpoint using `Postman` and making GET requests.
+
 #### `/api/employees`
 
 (e.g. `https://resource-veterinarian-api-4guj.onrender.com/api/employees`)

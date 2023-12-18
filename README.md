@@ -1,4 +1,4 @@
-# React Networking Lab
+# React Lifecycle (useEffect) Lab
 
 In this lab, you will build a simple page that will show all of the employees at a local veterinarian hospital by accessing an external API. Then, you will make it so that, by clicking a button, the pets each doctor sees at the hospital appear.
 
@@ -29,22 +29,27 @@ In this lab, you will build a simple page that will show all of the employees at
 ## Instructions
 
 Making use of the existing code, add the following features to the React application. Details about the API you will be accessing are included below.
+Use the image above as a reference.
 
 - [ ] Instead of showing a hardcoded staff member, dynamically build a list of staff members by accessing the external API.
   - [ ] If the staff member has a `prefix`, like `"Dr."`, include it at the beginning of the name. (E.g. "Dr. Leah Ayers")
   - [ ] If the staff members has a `postfix`, like `"CVPM"`, include it at the end of the name with a comma. (E.g. "Susan Gallegos, CVPM")
 - [ ] Upon clicking the "Show Pets" button, the name of the pets the staff members sees should be shown below the button.
-  - You only need to include the names of the pets as a comma-separated list.
+  - You only need to include the `names` of the pets as a comma-separated list.
 
-There are multiple ways to accomplish the above goals. The tests should be resilient enough to account for a few different ways.
+There are multiple ways to accomplish the above goals.
 
-You _should not_ change the overall component hierarchy in this application. However, _you may_ switch components from functional components to class components.
+You _should not_ change the overall component hierarchy in this application.
 
 ### Using the API
 
-Your instructor will give you the URL for the API you will be accessing. There will be two endpoints you will need to hit.
+The URL for the API you will be accessing is `https://resource-veterinarian-api-4guj.onrender.com`.
+
+There will be two endpoints you will need to hit.
 
 #### `/api/employees`
+
+(e.g. `https://resource-veterinarian-api-4guj.onrender.com/api/employees`)
 
 Making a GET request to this path will return an array of employees. The response will look similar to the one below.
 
@@ -56,13 +61,15 @@ Making a GET request to this path will return an array of employees. The respons
     lastName: "Ayers",
     prefix: "Dr.",
     postfix: "",
-    title: "Medical Director",
-  },
+    title: "Medical Director"
+  }
   // ...
 ];
 ```
 
 #### `/api/pets`
+
+(e.g. `https://resource-veterinarian-api-4guj.onrender.com/api/pets`)
 
 Making a GET request to this path will return an array of pets. The response will look similar to the one below.
 
@@ -73,15 +80,15 @@ Making a GET request to this path will return an array of pets. The response wil
     name: "Lady",
     kind: "Dog",
     breed: "Doberman Pinscher",
-    employeeId: "z7GIN_i",
-  },
+    employeeId: "z7GIN_i"
+  }
   // ...
 ];
 ```
 
-Each pet has an `employeeId` key which has an ID that matches an employee. This represents which staff member is overseeing the pet.
+Each pet has an `employeeId` key which matches one employee's id. This represents which staff member is overseeing the pet.
 
-Additionally, you can specifically look for pets with an ID that matches an employee. For example, take a look at the following path and response.
+Alternaitively, you can specifically look for pets with an ID that matches an employee. For example, take a look at the following path and response.
 
 **Request Path:**
 
@@ -96,10 +103,12 @@ Additionally, you can specifically look for pets with an ID that matches an empl
     name: "Alanis",
     kind: "Dog",
     breed: "Retriever, Labrador",
-    employeeId: "vlJtFOU",
-  },
+    employeeId: "vlJtFOU"
+  }
   // ...
 ];
 ```
 
 In the example above, the employee ID of `vlJtFOU` was included as part of the path. Only those pets with an `employeeId` that is equal to that ID are then returned.
+
+There are several ways to solve this exercise, but always remember, you want to choose the path where you make the least api calls to the server.

@@ -112,4 +112,4 @@ Alternaitively, you can specifically look for pets with an ID that matches an em
 
 In the example above, the employee ID of `vlJtFOU` was included as part of the path. Only those pets with an `employeeId` that is equal to that ID are then returned.
 
-There are several ways to solve this exercise, but remember, it is always preferable and less expensive to hit the api endpoints as few times as possible.
+There are several ways to solve this exercise, but remember, it is always preferable and less expensive to hit api endpoints as few times as possible.

@@ -1,7 +1,20 @@
-export const PetList = () => {
+
+export const PetList = ({pets}) => {
   return (
     <aside className="pets-list">
-      <p>No pets listed for this employee.</p>
+      {pets.length === 0 ? <p>
+        No pets listed for this employee.
+      </p> :
+      <ul>
+        <li style={{ listStyle: 'none', marginLeft: '-40px'}}>
+        {pets.map((pet, index) => (
+          <span key={pet.id}>
+            {index === pets.length - 1 ? pet.name : `${pet.name}, `}
+          </span>
+        ))}
+        </li>
+      </ul>
+        }
     </aside>
   );
 };

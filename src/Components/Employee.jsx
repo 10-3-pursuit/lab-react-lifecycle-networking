@@ -1,13 +1,15 @@
 import PetList from "./PetList";
 import "./Employee.css";
 
-export const Employee = () => {
+export const Employee = ({employee}) => {
   return (
     <article className="employee">
-      <h3>Staff Member Name</h3>
-      <h4>Staff Member Title</h4>
-      <button>Show Pets</button>
-      <PetList />
+      <li>
+        <h3>Staff Member Name: {employee.firstName} {employee.lastName}</h3>
+        <h4>Staff Member Title {employee.title}</h4>
+        <button>Show Pets</button>
+        <PetList />
+      </li>
     </article>
   );
 };

@@ -3,7 +3,7 @@ export const PetList = ({pets}) => {
   return (
     <aside className="pets-list">
       {pets.length === 0 ? <p>
-        No Pets found.
+        No pets listed for this employee.
       </p> :
       <ul>
         <li style={{ listStyle: 'none', marginLeft: '-40px'}}>

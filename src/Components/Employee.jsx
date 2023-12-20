@@ -1,7 +1,14 @@
 import PetList from "./PetList";
 import "./Employee.css";
+import { useState } from "react";
 
 export const Employee = ({employee}) => {
+
+  const [showPets, setShowPets] = useState(false)
+
+  function toggleShowPets(){
+    setShowPets(!showPets)
+  }
 
   function calculateName(employee){
     if(!employee.prefix && !employee.postfix){
@@ -22,8 +29,8 @@ export const Employee = ({employee}) => {
       <li>
         <h3>{name}</h3>
         <h4>{employee.title}</h4>
-        <button>Show Pets</button>
-        <PetList />
+        <button onClick={toggleShowPets}>Show Pets</button>
+        {showPets && <PetList employeeId={employee.id} />}
       </li>
     </article>
   );

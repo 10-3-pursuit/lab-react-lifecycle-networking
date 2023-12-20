@@ -21,7 +21,7 @@ export const EmployeeList = () => {
 
   return (
     <main>
-      <h2>All Staff</h2>
+      <h2 className="all-staff">All Staff</h2>
       <section className="employee-list">
         <ul>
         {employees.map((employee) => (

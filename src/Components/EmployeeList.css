@@ -3,8 +3,12 @@ main {
   width: 80%;
 }
 
-.employee-list {
+.employee-list ul{
   display: grid;
-  gap: 25px;
+  grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.all-staff {
+  margin-left: 40px;
 }

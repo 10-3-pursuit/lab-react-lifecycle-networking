@@ -18,7 +18,7 @@ export const PetList = ({employeeId}) => {
     // console.log(pets)
 
     const matchingPets = pets.map((pet) => pet.name).join(", ")
-    console.log(matchingPets)
+    // console.log(matchingPets)
 
   return (
     <aside className="pets-list">

@@ -1,8 +1,16 @@
 .employee {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 150px;
+  row-gap: 50px;
+}
+
+
+.employee-li {
+  list-style-type: none;
   border: 1px solid var(--gold);
-  border-radius: 5px;
-  padding: 25px;
-  text-align: center;
+  padding: 40px;
+  width: 200px;
 }
 
 .employee h3 {

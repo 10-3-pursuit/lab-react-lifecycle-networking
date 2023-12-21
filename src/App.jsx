@@ -7,9 +7,9 @@ import EmployeeList from "./Components/EmployeeList";
 
 function App () {
 
+console.log("useEffect Ran");
 
 
-  
   return (
     <>
       <NavBar />

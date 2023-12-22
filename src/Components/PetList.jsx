@@ -9,17 +9,15 @@ export const PetList = (props) => {
     );
   }, []);
 
+  const filteredPets = pets.filter((pet) => pet.employeeId === props.vetId);
+
   return (
     <aside className="pets-list">
-      {props.displayPets ? (
-        <p>No pets listed for this employee.</p>
-      ) : pets.some((pet) => pet.employeeId === props.vetId) ? (
-        pets
-          .filter((pet) => pet.employeeId === props.vetId)
-          .map((pet) => <p key={pet.id}>{pet.name}</p>)
-      ) : (
-        <p>No pets listed for this employee.</p>
+      {pets.map(
+        (pet) =>
+          pet.employeeId === props.vetId && <p key={pet.id}>{pet.name}</p>
       )}
+      {filteredPets.length === 0 && <p>No pets found</p>}
     </aside>
   );
 };

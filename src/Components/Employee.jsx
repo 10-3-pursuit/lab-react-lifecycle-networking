@@ -5,10 +5,6 @@ import { useEffect, useState } from "react";
 export const Employee = (props) => {
   const [displayPets, setDisplayPets] = useState(false);
 
-  const handleSubmit = () => {
-    setDisplayPets(!displayPets);
-  };
-
   return (
     <article className="employee">
       <h3>
@@ -16,8 +12,7 @@ export const Employee = (props) => {
         {props.vet.postfix && props.vet.lastName + ", " + props.vet.postfix}
       </h3>
       <h4>{props.vet.title}</h4>
-      <button onClick={handleSubmit}>Show Pets</button>
-      {console.log(displayPets)}
+      <button onClick={() => setDisplayPets(!displayPets)}>Show Pets</button>
       {displayPets && <PetList vetId={props.vet.id} />}
     </article>
   );

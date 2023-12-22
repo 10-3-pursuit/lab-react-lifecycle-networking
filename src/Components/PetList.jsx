@@ -17,7 +17,7 @@ export const PetList = (props) => {
         (pet) =>
           pet.employeeId === props.vetId && <p key={pet.id}>{pet.name}</p>
       )}
-      {filteredPets.length === 0 && <p>No pets found</p>}
+      {filteredPets.length === 0 && <p>No pets lised for this employee</p>}
     </aside>
   );
 };

@@ -2,12 +2,7 @@ import PetList from "./PetList";
 import "./Employee.css";
 
 
-// id: "z7GIN_i",
-//     firstName: "Leah",
-//     lastName: "Ayers",
-//     prefix: "Dr.",
-//     postfix: "",
-//     title: "Medical Director"
+
 
 export const Employee = ({employee}) => {
   return (

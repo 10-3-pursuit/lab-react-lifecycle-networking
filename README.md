@@ -24,7 +24,7 @@ In this lab, you will build a simple page that will show all of the employees at
 
 1. Deploy this application to Netlify and add the link to your netlify site below:
 
-- [MY LIVE SITE URL]()
+- [MY LIVE SITE URL](https://joyful-crisp-095053.netlify.app)
 
 ## Instructions
 
@@ -64,8 +64,8 @@ Making a GET request to this path will return an array of employees. The respons
     lastName: "Ayers",
     prefix: "Dr.",
     postfix: "",
-    title: "Medical Director"
-  }
+    title: "Medical Director",
+  },
   // ...
 ];
 ```
@@ -83,8 +83,8 @@ Making a GET request to this path will return an array of pets. The response wil
     name: "Lady",
     kind: "Dog",
     breed: "Doberman Pinscher",
-    employeeId: "z7GIN_i"
-  }
+    employeeId: "z7GIN_i",
+  },
   // ...
 ];
 ```
@@ -106,8 +106,8 @@ Alternaitively, you can specifically look for pets with an ID that matches an em
     name: "Alanis",
     kind: "Dog",
     breed: "Retriever, Labrador",
-    employeeId: "vlJtFOU"
-  }
+    employeeId: "vlJtFOU",
+  },
   // ...
 ];
 ```

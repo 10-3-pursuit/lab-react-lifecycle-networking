@@ -19,7 +19,7 @@ export const EmployeeList = () => {
       <section className="employee-list">
         {/* need to .map to grab keys and need employee id for the prop because it is used for list item as well as for the pets in PetList.jsx */}
         {employees.map(employee => (
-        <Employee key={employees.id} employee={employee} />
+        <Employee key={employee.id} employee={employee} />
         ))}
       </section>
     </main>

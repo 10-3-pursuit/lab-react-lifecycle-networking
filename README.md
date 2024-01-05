@@ -24,7 +24,7 @@ In this lab, you will build a simple page that will show all of the employees at
 
 1. Deploy this application to Netlify and add the link to your netlify site below:
 
-- [MY LIVE SITE URL]()
+- [MY LIVE SITE URL](https://animated-monstera-06b8c7.netlify.app/)
 
 ## Instructions
 

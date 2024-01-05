@@ -19,6 +19,7 @@ export const Employee = ( {employee} ) => { //get data by outting it here then u
   
   return (
     <article className="employee">
+      {/* ternary in case they have Dr. in front of their name */}
       <h3>{employee.prefix ? employee.prefix : ''} {employee.firstName} {employee.lastName}{employee.postfix ? `, ${employee.postfix}` : ''}</h3>
       <h4>{employee.title}</h4>
       <button onClick={fetchPets}>Show Pets</button>

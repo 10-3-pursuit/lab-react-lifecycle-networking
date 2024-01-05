@@ -1,6 +1,7 @@
 import React from "react";
 import Employee from "./Employee";
 import "./EmployeeList.css";
+import { useState, useEffect } from "react";
 
 export const EmployeeList = () => {
   return (
